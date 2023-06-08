@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Baca</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background: linear-gradient(45deg, rgb(207, 62, 255), cyan);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      display: flex;
+      margin: 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+      background-color: none;
+      border-radius: 5px;
+      transition: border 0.3s;
+      border: solid cyan;
+    }
+
+    nav a:hover {
+      border: solid rgb(255, 62, 226);
+      color:aqua;
+    }
+
+    section {
+      padding: 20px;
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    footer {
+      padding: 10px;
+      text-align: center;
+      font-size: 12px;
+      color: rgb(0, 0, 0);
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    p {
+      font-family: serif;
+      line-height: 1.5; 
+      margin-bottom: 10px
+    }
+    h2 h4 {
+      font-family: serif;
+      line-height: 1.5; 
+      margin-bottom: 10px
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Selamat Datang di InkSpirations</h2>
+    <p>ver 0.1</p>
+  </header>
+
+  <section id="home" class="ebook-container active">
+    <h2>Home Page</h2>
+    <p>Ini adalah halaman depan blog baca. Perlu Diingat semua cerita pada blog ini hanyalah karangan semata dan untuk mengisi waktu luang dan menghibur para pembaca, tidak ada maksud menyinggung atau menjatuhkan pihak manapun.</p>
+  </section>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">⌂ Home</a>
+    <a href="#" onclick="showSection('ebook1')">Dalam Labirin Edukasi</a>
+    <a href="#" onclick="showSection('ebook2')">Mengukur Rasa Gugup</a>
+    <a href="#" onclick="showSection('ebook3')">Suara Dalam Keheningan</a>
+    <a href="#" onclick="showSection('ebook4')">Mengejar Impian Bersama</a>
+    <a href="#" onclick="showSection('ebook5')">Perjalanan Sebuah Website Baca</a>
+  </nav>
+
+  <section id="ebook1" class="ebook-container">
+    <h2>Dalam Labirin Edukasi</h2>
+    <p>Penulis: Dean Ramadhan</p>
+    <p>Tanggal Terbit: 6, Juni, 2023</p>
+    <hr>
+    <h4>Abstrak:</h4><br>
+    <p>"Revolutionary Resonance: Maya's Journey to Unmask the Flawed Education System" mengisahkan tentang Maya, seorang siswi SMA yang memiliki penampilan menawan dan pemikiran tajam. Maya merasa terdorong untuk mengungkap keanehan dalam sistem pendidikan di sekolahnya yang baru-baru ini meraih akreditasi A. Untuk menyuarakan ketidakpuasannya, Maya memutuskan untuk meretas sistem sekolah sebagai bentuk unjuk rasa. Dalam perjalanannya, Maya menemukan sekutu yang berbagi pandangan dan membantunya meretas sistem, sementara ia berjuang melawan korupsi dan ketidakadilan di sekolahnya.</p>
+    <h4>Plot:</h4>
+    <p>Bagian 1: The Awakening</p>
+    <p>Maya adalah seorang siswi SMA yang cerdas dan berbakat, namun semakin ia memahami sistem pendidikan di sekolahnya, semakin jelas pula keanehan dan kekurangan yang ada. Meskipun sekolahnya baru-baru ini meraih akreditasi A, Maya menyadari bahwa banyak siswa yang tidak mendapatkan pendidikan yang berkualitas. Dia merasa terpanggil untuk mengungkapkan kebenaran ini dan mencari cara untuk membuat perubahan yang nyata.</p>
+    <p>Bagian 2: The Hacking Alliance</p>
+    <p>Dalam perjalanannya, Maya menemukan sekelompok individu yang memiliki pandangan serupa tentang pendidikan yang adil dan berkualitas. Mereka adalah Ethan, seorang ahli teknologi komputer yang terampil dalam meretas sistem, dan Olivia, seorang aktivis yang bersemangat untuk mengubah dunia. Bersama-sama, mereka membentuk aliansi dan berencana untuk meretas sistem sekolah sebagai bentuk protes dan menyuarakan kekecewaan mereka terhadap kurangnya pendidikan yang layak.</p>
+    <p>Bagian 3: The Deep Dive</p>
+    <p>Maya, Ethan, dan Olivia mulai melakukan penyelidikan yang intensif terhadap sistem pendidikan di sekolah mereka. Mereka mengumpulkan bukti-bukti yang menunjukkan ketidakadilan dan korupsi yang ada. Maya menemukan bahwa sebenarnya akreditasi A yang diperoleh sekolahnya adalah hasil manipulasi dan penipuan. Penemuan ini semakin mempertajam tekad Maya untuk melawan sistem yang korup dan memberikan pendidikan yang lebih baik kepada semua siswa.</p>
+    <p>Bagian 4: The Hacktivist Manifesto</p>
+    <p>Maya dan aliansinya menggunakan keterampilan Ethan dalam meretas sistem untuk mempengaruhi perubahan yang diinginkan. Mereka meretas jaringan sekolah, mengubah penjadwalan pelajaran, dan mengungkapkan kebenaran tentang kelemahan sistem melalui media sosial dan situs web sekolah. Aksi-aksi mereka menciptakan kekacauan di sekolah dan menarik perhatian masyarakat serta media. Maya menuliskan manifesto hacktivist yang mengungkapkan tujuan mereka dan meminta dukungan dari siswa, orangtua, dan masyarakat luas.</p>
+    <p>Bagian 5: The Battle for Justice</p>
+    <p>Dalam menghadapi konsekuensi dari tindakan mereka, Maya dan aliansinya menghadapi hambatan besar. Mereka dihadapkan pada penentangan dari pihak sekolah yang berusaha menjaga reputasi mereka. Namun, dengan dukungan dari siswa, guru, dan masyarakat yang percaya pada perubahan yang mereka usulkan, Maya dan aliansinya melanjutkan perjuangan mereka. Mereka berjuang untuk transparansi, keadilan, dan kualitas pendidikan yang setara bagi semua siswa.</p>
+    <p>Bagian 6: The Unveiling</p>
+    <p>Akhirnya, hasil dari perjuangan Maya dan aliansinya terungkap. Media memberitakan skandal dalam sistem pendidikan sekolah Maya yang meraih akreditasi A secara tidak jujur. Pihak berwenang dan lembaga pendidikan terpaksa menghadapi tekanan publik yang tak terelakkan. Ini membuka jalan bagi perubahan nyata dan pengawasan yang lebih ketat terhadap sistem pendidikan.</p>
+    <p>Bagian 7: The Ongoing Journey</p>
+    <p>Meskipun akhir cerita ini membuka babak baru dalam perjuangan Maya dan aliansinya, perjalanan mereka masih berlanjut. Maya dan sekutunya menyadari bahwa memperbaiki sistem pendidikan adalah tantangan yang berkelanjutan. Mereka bertekad untuk melanjutkan perjuangan mereka dalam menciptakan pendidikan yang adil, relevan, dan inklusif bagi semua siswa.</p>
+    <p>Bagian 8: The Consequences</p>
+    <p>Maya dan aliansinya harus menghadapi konsekuensi dari tindakan mereka. Pihak sekolah meluncurkan penyelidikan dan menyalahkan mereka atas gangguan yang terjadi di sistem. Maya, Ethan, dan Olivia dihadapkan pada ancaman pengusiran dan sanksi yang serius. Mereka merasa tertekan dan ragu apakah perjuangan mereka benar-benar bernilai.</p>
+    <p>Bagian 9: The Support System</p>
+    <p>Dalam masa-masa sulit itu, Maya menemukan dukungan luar biasa dari teman-teman dan keluarganya. Sahabatnya, Lisa, yang selalu ada di sisinya, memberikan kekuatan dan dorongan. Maya juga mendapatkan dukungan dari guru-guru yang percaya pada tujuan perubahan yang ia usung. Bersama-sama, mereka memberikan keberanian dan keyakinan kepada Maya untuk melanjutkan perjuangannya.</p>
+    <p>Bagian 10: The Unexpected Alliance</p>
+    <p>Dalam perjalanan Maya, ia menemukan seorang siswi lain di sekolah, Rachel, yang juga merasa frustrasi dengan sistem pendidikan yang tidak memadai. Keduanya membentuk aliansi tak terduga untuk menghadapi pihak sekolah dan melanjutkan perjuangan mereka. Dengan keahlian teknis Rachel, mereka mampu menggali lebih dalam dan mengungkap kebobrokan yang ada di balik sistem pendidikan.</p>
+    <p>Bagian 11: The Revelation</p>
+    <p>Maya, Rachel, dan aliansi mereka berhasil mengumpulkan bukti yang tak terbantahkan tentang manipulasi dan korupsi dalam sistem pendidikan di sekolah mereka. Mereka membagikan temuan mereka kepada media, otoritas pendidikan, dan masyarakat luas. Skandal ini mencuat dan menciptakan gelombang protes yang tak terelakkan.</p>
+    <p>Bagian 12: The Turning Point</p>
+    <p>Dalam keadaan ini, pihak sekolah terpaksa menghadapi tekanan publik yang besar. Pimpinan sekolah digantikan, dan komite independen dibentuk untuk menyelidiki kasus tersebut. Maya, Rachel, dan aliansinya diberi kesempatan untuk memberikan kesaksian mereka dan menyampaikan visi mereka tentang pendidikan yang lebih baik.</p>
+    <p>Bagian 13: The Resolution</p>
+    <p>Setelah proses penyelidikan yang intensif, komite independen mengeluarkan laporan yang mengungkap kebobrokan dalam sistem pendidikan sekolah Maya. Sanksi diberlakukan kepada mereka yang bertanggung jawab, sementara langkah-langkah perbaikan dan reformasi diterapkan dalam sistem pendidikan. Maya dan Rachel merasa lega, karena usaha keras mereka telah membuahkan hasil yang signifikan.</p>
+    <p>Bagian 14: The Continuing Journey</p>
+    <p>Meskipun perubahan telah terjadi, Maya, Rachel, dan aliansi mereka menyadari bahwa perbaikan pendidikan adalah perjalanan yang berkelanjutan. Mereka bersumpah untuk tetap aktif dalam memonitor dan mendorong perubahan positif. Maya menyadari bahwa perjuangan ini telah membentuknya menjadi sosok yang lebih kuat, berani, dan peduli pada keadilan pendidikan.</p>
+    <h4>Ending 1</h4>
+    <p>Bagian 15: The Betrayal</p>
+    <p>Saat Maya, Rachel, dan aliansi mereka tengah berjuang melawan sistem pendidikan yang korup, mereka dihadapkan pada pengkhianatan tak terduga. Salah satu anggota aliansi, Alex, ternyata bekerja untuk pihak sekolah dan memberikan informasi tentang rencana mereka. Hal ini membuat upaya mereka terbongkar, dan pihak sekolah segera mengambil tindakan tegas terhadap mereka.</p>
+    <p>Bagian 16: The Suppression</p>
+    <p>Maya, Rachel, dan aliansinya menghadapi konsekuensi yang berat atas perjuangan mereka. Pihak sekolah menggunakan kekuasaan dan pengaruh mereka untuk menekan mereka secara hukum dan sosial. Maya dan Rachel dihadapkan pada tindakan disiplin yang keras, seperti penghentian sekolah, sanksi hukuman, dan rekam jejak yang buruk. Semangat mereka hancur, dan impian mereka tentang perubahan pun terkubur.</p>
+    <p>Bagian 17: The Silence</p>
+    <p>Dalam situasi ini, pihak sekolah berhasil menekan berita tentang kebobrokan dalam sistem pendidikan. Maya, Rachel, dan aliansinya terpaksa menjalani hidup dengan rasa kecewa dan keputusasaan. Sekolah terus beroperasi dengan sistem pendidikan yang korup dan tidak adil, sedangkan siswa-siswa lainnya masih terjebak dalam lingkaran ketidakpuasan dan kelemahan.</p>
+    <h4>Ending 2</h4>
+    <p>Bagian 15: The Public Outcry</p>
+    <p>Maya, Rachel, dan aliansinya berhasil menyuarakan kebenaran tentang sistem pendidikan yang korup kepada masyarakat luas. Berkat dukungan yang luar biasa dari siswa, orang tua, guru, dan masyarakat, terjadi gelombang protes yang tak terbendung. Media memberitakan dengan luas tentang skandal tersebut, dan tekanan publik semakin meningkat.</p>
+    <p>Bagian 16: The Reform</p>
+    <p>Menghadapi tekanan publik yang besar, pihak sekolah terpaksa mengambil tindakan serius. Mereka mendengarkan tuntutan perubahan yang diajukan oleh Maya, Rachel, dan aliansi mereka. Sebuah tim independen dibentuk untuk melakukan evaluasi menyeluruh terhadap sistem pendidikan dan menerapkan langkah-langkah reformasi yang diperlukan. Transparansi, akuntabilitas, dan keadilan menjadi poin fokus dalam perbaikan tersebut.</p>
+    <p>Bagian 17: The New Beginning</p>
+    <p>Dalam atmosfer yang penuh harapan, Maya, Rachel, dan aliansinya melihat perubahan nyata terjadi. Sistem pendidikan di sekolah mereka diperbaiki secara signifikan. Ada pengawasan yang lebih ketat terhadap proses pembelajaran, kurikulum yang lebih relevan, dukungan yang lebih baik untuk siswa, dan peningkatan kualitas pengajaran. Siswa-siswa merasa didengar dan memiliki akses yang sama terhadap pendidikan yang berkualitas.</p>
+    <hr>
+    <footer>
+      &copy; 2023 Dean Ramadhan.
+    </footer>
+  </section>
+
+  <section id="ebook2" class="ebook-container">
+    <h2>Mengukur Rasa Gugup</h2>
+    <p>Penulis: Dean Ramadhan</p>
+    <p>Tanggal Terbit: 7, Juni, 2023</p>
+    <hr>
+    <h4>Abstrak:</h4>
+    <p>Cerita ini mengisahkan seorang siswa SMK bernama Rama, yang berpartisipasi dalam sebuah perlombaan akurasi alat ukur yang diadakan oleh perusahaan otomotif terkenal. Rama, bersama dengan dua temannya, dipilih secara acak sebagai peserta dari kelas 11, sedangkan peserta lain berasal dari kelas 12 dan kelas 10. Namun, dalam penyisihan awal, Rama dikejutkan dengan pengumuman bahwa ia telah dikeluarkan dari peserta, tanpa adanya tes atau ujian seleksi. Rasa kecewa dan keheranannya membuatnya bertanya-tanya mengapa hal itu terjadi. Namun, beberapa hari kemudian, Rama mendapatkan pesan dari guru bimbingan karir yang mengundangnya untuk kembali ikut serta dalam perlombaan tersebut. Rama pun mendaftar kembali dan menjadi calon peserta.</p>
+    <p>Hari perlombaan tiba, dan Rama merasa gugup saat mengikuti pembekalan lomba. Saat lomba dimulai, Rama berjuang keras dan akhirnya berhasil meraih posisi juara kedua. Kemenangan ini memberinya sebuah tiket emas (golden ticket) yang memberinya kesempatan untuk maju ke babak final. Di babak final, Rama akan bersaing dengan dua peserta lain yang juga merupakan juara dari sekolahnya, serta 27 peserta dari sekolah-sekolah lain yang masing-masing mengirimkan tiga peserta. Rama merasa gugup yang luar biasa menjelang babak final, namun ia bersiap untuk memberikan yang terbaik.</p>
+    <h4>Plot:</h4>
+    <p>Bagian 1: The Selection</p>
+    <p>Rama, seorang siswa SMK yang bersemangat, dipilih secara acak bersama dua temannya, Maya dan Dika, untuk menjadi peserta dalam perlombaan akurasi alat ukur yang diadakan oleh perusahaan otomotif terkenal. Mereka akan mewakili sekolah mereka dalam perlombaan tersebut. Namun, ketika penyisihan awal dimulai, Rama terkejut mengetahui bahwa ia telah dikeluarkan dari peserta tanpa alasan yang jelas. Ia merasa kecewa dan bingung mengapa hal tersebut terjadi.</p>
+    <p>Bagian 2: The Invitation</p>
+    <p>Beberapa hari setelah penyisihan awal, Rama menerima pesan dari guru bimbingan karir yang meminta maaf atas kejadian sebelumnya dan mengundangnya untuk mendaftar kembali sebagai peserta dalam perlombaan. Rama, yang masih penasaran dengan kejadian sebelumnya, memutuskan untuk mengambil kesempatan tersebut dan mendaftar kembali.</p>
+    <p>Bagian 3: The Nervous Preparation</p>
+    <p>Hari perlombaan tiba, dan Rama merasa gugup yang luar biasa. Ia berusaha untuk tetap tenang dan mempersiapkan diri sebaik mungkin dengan mempelajari materi-materi terkait akurasi alat ukur. Teman-temannya, Maya dan Dika, memberikan dukungan dan semangat kepadanya. Mereka berjanji untuk mendukung Rama sepanjang perlombaan.</p>
+    <p>Bagian 4: The Competition Begins</p>
+    <p>Perlombaan dimulai, dan Rama berusaha sekuat tenaga untuk menjawab setiap pertanyaan dan menjalankan setiap tugas dengan akurat. Ia berjuang keras dan berkompetisi dengan peserta lain yang memiliki pengetahuan dan keterampilan yang kuat. Rama juga berusaha menjaga konsentrasi dan mengatasi ketegangan yang dirasakannya.</p>
+    <p>Bagian 5: The Triumph and Golden Ticket</p>
+    <p>Akhirnya, perlombaan usai, dan Rama berhasil meraih posisi juara kedua. Kemenangan ini memberinya kebahagiaan dan rasa bangga yang besar. Selain itu, Rama juga diberikan sebuah tiket emas (golden ticket), yang menandakan bahwa ia berhak maju ke babak final perlombaan.</p>
+    <p>Bagian 6: The Final Challenge</p>
+    <p>Rama bersiap untuk menghadapi babak final perlombaan. Ia akan bersaing dengan dua peserta lain yang juga merupakan juara dari sekolahnya, serta 27 peserta dari sekolah-sekolah lain yang memiliki kemampuan yang luar biasa. Rama merasa gugup yang tak terkendali, namun ia berusaha untuk tetap tenang dan percaya pada kemampuannya.</p>
+    <h4>Ending 1:</h4>
+    <p>Bagian 7: The Overwhelming Pressure</p>
+    <p>Saat babak final dimulai, Rama merasa terlalu tertekan oleh tekanan dan gugup yang ia rasakan. Meskipun ia memiliki pengetahuan dan keterampilan yang cukup, ketidakmampuan Rama mengendalikan kecemasan dan gugupnya membuatnya sulit untuk tampil maksimal. Akibatnya, ia membuat beberapa kesalahan dalam mengukur akurasi alat ukur dan tidak mampu menunjukkan kemampuan terbaiknya.</p>
+    <p>Bagian 8: The Disappointing Outcome</p>
+    <p>Setelah perlombaan berakhir, Rama tidak berhasil menjadi pemenang. Ia harus menerima kenyataan bahwa ada peserta lain yang tampil lebih baik darinya. Rasa kecewa dan kekecewaannya terhadap dirinya sendiri semakin memuncak. Ia merasa bahwa ia telah gagal dan tidak mencapai harapannya dalam perlombaan ini.</p>
+    <p>Bagian 9: The Self-Reflection</p>
+    <p>Setelah kekalahan tersebut, Rama menghabiskan waktu untuk merefleksikan perjalanan dan prestasinya dalam perlombaan. Meskipun ia merasa frustrasi dan kecewa, ia juga menyadari bahwa perlombaan ini telah memberinya pengalaman dan pembelajaran yang berharga. Rama berjanji untuk belajar dari kegagalan ini dan menggunakan pengalaman ini sebagai cambuk untuk terus berkembang.</p>
+    <h4>Ending 2:</h4>
+    <p>Bagian 7: The Unwavering Confidence</p>
+    <p>Meskipun Rama tidak berhasil menjadi pemenang dalam perlombaan, ia tetap mempertahankan rasa percaya diri yang tinggi. Meskipun gugup, ia berhasil mengendalikan emosinya dan tetap fokus pada tugasnya. Rama mengukur akurasi alat-alat dengan hati-hati dan seakurat mungkin, meskipun terdapat tekanan dari peserta lain.</p>
+    <p>Bagian 8: The Proud Journey</p>
+    <p>Meskipun Rama tidak meraih posisi juara, ia tetap merasa bangga dengan perjalanan dan usahanya dalam perlombaan ini. Ia menyadari bahwa prestasi bukan hanya tentang hasil akhir, tetapi juga tentang upaya dan dedikasi yang ia berikan. Rama merasa puas karena ia telah berjuang dengan sepenuh hati dan memberikan yang terbaik dalam kemampuannya.</p>
+    <p>Bagian 9: The Lesson Learned</p>
+    <p>Rama melihat kegagalan ini sebagai pelajaran berharga. Ia menyadari bahwa keberhasilan tidak selalu diukur dari medali atau peringkat yang diperoleh. Rama memahami bahwa pentingnya terus belajar, tumbuh, dan mencoba hal-hal baru. Ia berkomitmen untuk terus mengembangkan dirinya dan mengejar impian-impian lainnya.</p>
+    <p>Bagian 10: The Bright Future</p>
+    <p>Meskipun kalah dalam perlombaan ini, Rama tidak patah semangat. Ia tetap bersemangat dalam mengejar karier di bidang otomotif yang ia minati. Pengalaman dan pembelajaran yang ia dapatkan dari perlombaan ini akan membantu Rama dalam meraih kesuksesan di masa depan. Ia memutuskan untuk terus mengasah keterampilannya dan menjadikan perlombaan ini sebagai pijakan untuk mencapai tujuan-tujuannya.</p>
+    <hr>
+    <footer>
+      &copy; 2023 Dean Ramadhan.
+    </footer>
+  </section>
+
+  <section id="ebook3" class="ebook-container">
+    <h2>Suara Dalam Keheningan</h2>
+    <p>Penulis: Dean Ramadhan</p>
+    <p>Tanggal Terbit: 7, Juni, 2023</p>
+    <hr>
+    <h4>Abstrak:</h4>
+    <p>Perjalanan seorang siswa SMK, Dika, yang mengikuti kegiatan LDKS di hutan. Saat hendak berkeliling sebentar sambil mencari makan malam yang belum diterimanya, Dika tersesat di dalam hutan yang lebat. Sebelum tersesat, ia bertemu dengan seorang teman cewek, Rina, dari jurusan sebelah. Mereka berkenalan dan berbincang sejenak sebelum Dika memutuskan untuk menjelajahi hutan sebentar. Namun, tak disangka, Dika tersesat dan cerita ini mengisahkan perjuangan Dika dalam mencari jalan pulang sambil menghadapi tantangan alam liar yang tak terduga.</p>
+    <h4>Plot:</h4>
+    <p>Bagian 1</p>
+    <p>Dika, seorang siswa SMK yang energik dan antusias, sangat bersemangat mengikuti kegiatan LDKS di hutan. Ia berharap dapat belajar berbagai keterampilan dan mengenal lebih banyak teman sekelasnya. Saat tiba di lokasi kegiatan, ia bertemu dengan Rina, seorang siswi cantik dan ramah dari jurusan sebelah. Mereka berkenalan dan menghabiskan waktu sejenak dengan berbincang tentang minat dan hobi mereka.</p>
+    <p>Bagian 2</p>
+    <p>Suatu malam, setelah kegiatan hari itu selesai, Dika merasa lapar dan ingin mencari makan malam yang belum diterimanya. Ia memutuskan untuk berkeliling sebentar sambil membawa senter sebagai alat bantu pencahayaan. Rina menawarkan untuk menemaninya, tetapi Dika mengatakan bahwa ia hanya akan pergi sebentar dan akan segera kembali.</p>
+    <p>Bagian 3</p>
+    <p>Namun, saat Dika berjalan sendirian dalam kegelapan hutan, ia mulai merasa tidak mengenali jalannya kembali ke tempat kegiatan LDKS. Rasa panik dan kebingungan melanda Dika ketika ia menyadari bahwa ia tersesat. Dika mencoba mengingat arah dan mencari tanda-tanda yang familiar, tetapi semakin ia berjalan, semakin jauh ia menjauh dari tujuan awalnya.</p>
+    <p>Bagian 4</p>
+    <p>Dika merasa khawatir dan mencoba memanggil bantuan, tetapi suaranya hilang dalam keheningan hutan yang gelap. Ia merasa terisolasi dan berusaha menjaga ketenangannya. Dika menggunakan senter untuk menerangi sekitarnya dan mencari petunjuk untuk kembali ke tempat kegiatan.</p>
+    <p>Bagian 5</p>
+    <p>Selama perjalanan mencari jalan pulang, Dika menghadapi berbagai tantangan alam liar, seperti medan yang sulit dilalui, sungai yang menghalangi jalannya, dan suara-suara misterius yang menghampirinya. Meskipun takut dan lelah, Dika tetap bertekad untuk tidak menyerah dan terus mencari jalan pulang.</p>
+    <p>Bagian 6</p>
+    <p>Sementara itu, Rina mulai khawatir ketika Dika tak kunjung kembali. Ia berusaha mencari Dika dan meminta bantuan teman-teman sekelasnya. Mereka membentuk tim pencarian untuk menemukan Dika dan membawanya kembali ke tempat kegiatan LDKS dengan selamat.</p>
+    <h4>Ending 1:</h4>
+    <p>Bagian 7</p>
+    <p>Dika terus berusaha mencari jalan pulang, tetapi sayangnya ia tidak berhasil menemukannya. Semakin lama ia tersesat, semakin lelah dan lapar Dika menjadi. Tim pencarian, bersama dengan siswa dan guru, melakukan upaya yang maksimal untuk menemukan Dika, namun mereka tidak berhasil menemukannya. Dika hilang di dalam hutan yang luas dan gelap, meninggalkan semua orang dalam kebingungan dan kekhawatiran.</p>
+    <h4>Ending 2:</h4>
+    <p>Bagian 7</p>
+    <p>Dika, dalam keadaan lelah dan lapar, terus berjalan di dalam hutan yang gelap. Ia merasa semakin lemah dan tak sanggup melanjutkan perjalanan. Saat itulah, Dika memutuskan untuk beristirahat sejenak di bawah sebatang pohon yang rindang. Dalam keadaan pingsan, Dika terbaring di bawah pohon itu, tanpa menyadari bahwa ia telah ditemukan oleh salah seorang siswa yang sedang mencari. Siswa tersebut melihat Dika yang tertunduk pingsan dan segera memberitahu tim pencarian.</p>
+    <p>Bagian 8</p>
+    <p>Setelah beberapa saat, Dika bangun dan mendapati dirinya dikelilingi oleh teman-teman dan guru-guru yang khawatir. Mereka bersyukur bahwa Dika ditemukan dalam keadaan selamat. Dika menceritakan pengalaman yang ia alami di dalam hutan, bagaimana ia tersesat dan mengalami kelelahan yang parah. Keselamatan Dika menjadi berita yang menggembirakan bagi semua orang yang terlibat dalam pencarian, termasuk Rina, siswi jurusan sebelah yang sebelumnya berbincang dengan Dika.</p>
+    <hr>
+    <footer>
+      &copy; 2023 Dean Ramadhan.
+    </footer>
+  </section>
+
+  <section id="ebook4" class="ebook-container">
+    <h2>Mengejar Impian Bersama</h2>
+    <p>Penulis: Dean Ramadhan</p>
+    <p>Tanggal Terbit: 7, Juni, 2023</p>
+    <hr>
+    <h4>Abstrak:</h4>
+    <p>Di SMA Merdeka, seorang siswi bernama Maya terpilih sebagai anggota OSIS. Sekolah mereka sedang merencanakan Classmeet, sebuah acara besar yang melibatkan berbagai perlombaan dan kegiatan menarik. Namun, kepala sekolah memberikan anggaran yang terbatas, menyulitkan OSIS dalam mengorganisir acara tersebut. Maya dan teman-teman OSIS harus berjuang keras untuk mencari solusi demi mewujudkan Classmeet yang unggul dan memenuhi harapan siswa.</p>
+    <h4>Plot:</h4>
+    <p>Bagian 1: Pertemuan OSIS dan Rencana Classmeet</p>
+    <p>Maya, seorang siswi berbakat dan aktif di SMA Merdeka, menjadi anggota OSIS. Di dalam rapat OSIS, mereka membahas rencana Classmeet yang akan datang. Guru seni budaya, Bapak Adi, memberikan ide brilian untuk mengadakan berbagai perlombaan dan kegiatan menarik. Namun, kepala sekolah memberikan anggaran yang terbatas, membuat mereka khawatir tentang kelancaran acara tersebut.</p>
+    <p>Bagian 2: Mencari Solusi</p>
+    <p>Maya, bersama teman-teman OSIS lainnya, seperti Rizky dan Sarah, memutuskan untuk mencari solusi agar Classmeet bisa tetap berjalan dengan baik. Mereka mulai melakukan riset untuk mencari sponsor dan donatur yang dapat membantu meningkatkan anggaran acara. Maya juga mengajak seluruh siswa untuk berpartisipasi aktif dalam penggalangan dana agar Classmeet bisa terlaksana sesuai harapan.</p>
+    <p>Bagian 3: Tantangan dan Keberhasilan</p>
+    <p>Perjuangan Maya dan tim OSIS tidaklah mudah. Mereka menghadapi banyak tantangan dalam mengumpulkan dana yang cukup untuk Classmeet. Namun, dengan kerja keras dan semangat pantang menyerah, mereka berhasil menarik minat banyak sponsor dan donatur untuk mendukung acara tersebut. Setiap hari, Maya dan tim OSIS bekerja keras mengatur logistik, mempersiapkan perlengkapan, dan mempromosikan Classmeet kepada seluruh siswa.</p>
+    <p>Bagian 4: Classmeet yang Spektakuler</p>
+    <p>Hari Classmeet tiba. Acara tersebut menjadi perhelatan yang spektakuler dan penuh semangat. Maya dan tim OSIS merasa bangga melihat semua usaha mereka terbayar. Siswa dan siswi SMA Merdeka antusias mengikuti berbagai perlombaan dan kegiatan yang diselenggarakan. Keberhasilan Classmeet tidak hanya terlihat dari jumlah peserta yang banyak, tetapi juga dari semangat dan kegembiraan yang terpancar dari setiap wajah siswa.</p>
+    <p>Bagian 5: Keberhasilan yang Membawa Harapan</p>
+    <p>Classmeet yang sukses menginspirasi semua siswa dan siswi SMA Merdeka. Maya dan tim OSIS merasa bangga atas kontribusi mereka dalam mewujudkan acara tersebut. Meskipun ada keterbatasan anggaran, semangat dan dedikasi mereka berhasil membawa Classmeet menjadi momen yang tak terlupakan bagi semua siswa. Classmeet memberikan harapan bahwa impian bisa terwujud jika kita bekerja sama dan tidak menyerah.</p>
+    <h4>Ending 1:</h4>
+    <p>Bagian 6: Kekecewaan yang Mendalam</p>
+    <p>Meskipun Maya dan tim OSIS telah bekerja keras mencari sponsor dan donatur, mereka tetap tidak berhasil mendapatkan cukup dana untuk Classmeet. Kepala sekolah tidak dapat menambah anggaran acara tersebut, dan mereka terpaksa mengumumkan bahwa Classmeet dibatalkan. Semua siswa dan siswi merasa kecewa dan sedih, karena mereka telah menunggu dengan antusias acara tersebut. Maya merasa sangat menyesal dan bertanggung jawab atas kegagalan ini.</p>
+    <h4>Ending 2:</h4>
+    <p>Bagian 6: Perjuangan yang Sulit</p>
+    <p>Meskipun Maya dan tim OSIS menghadapi perjuangan yang sulit dalam mengumpulkan dana, mereka tidak menyerah. Mereka mengorganisir berbagai acara penggalangan dana, seperti bazar, konser amal, dan lomba yang melibatkan seluruh siswa SMA. Dengan dukungan dan partisipasi aktif dari siswa dan siswi, mereka berhasil mengumpulkan dana yang cukup untuk melaksanakan Classmeet. Maya merasa sangat bangga dan bersyukur atas semangat tim OSIS dan solidaritas siswa dalam mendukung acara tersebut.</p>
+    <p>Bagian 7: Classmeet yang Mencapai Kesuksesan</p>
+    <p>Hari Classmeet tiba dan suasana penuh kegembiraan terasa di seluruh SMA. Maya dan tim OSIS mengatur segala persiapan dengan baik, mulai dari panggung hingga lomba-lomba yang menarik. Acara tersebut berjalan dengan lancar dan mendapat sambutan yang luar biasa dari seluruh siswa. Mereka dapat menampilkan bakat dan keterampilan mereka dalam berbagai perlombaan, serta menikmati berbagai kegiatan menarik yang diselenggarakan. Classmeet berhasil mencapai kesuksesan dan memberikan kenangan yang tak terlupakan bagi semua siswa dan siswi SMA Merdeka.</p>
+    <hr>
+    <footer>
+      &copy; 2023 Dean Ramadhan.
+    </footer>
+  </section>
+  </section>
+
+  <section id="ebook5" class="ebook-container">
+    <h2>Perjalanan Sebuah Website Baca</h2>
+    <p>Penulis: Dean Ramadhan</p>
+    <p>Tanggal Terbit: 7, Juni, 2023</p>
+    <hr>
+    <h4>Abstrak:</h4>
+    <p>Dalam cerita ini, kita akan mengikuti perjalanan dua siswa SMK yang memiliki minat dan bakat yang berbeda. Adi, siswa jurusan otomotif yang mahir dalam membuat website, dan Maya, siswi jurusan perkantoran yang memiliki ketertarikan dalam menulis fiksi. Ketika mereka bertemu dan berkenalan, mereka menyadari bahwa mereka dapat saling melengkapi dan menciptakan sesuatu yang menarik.</p>
+    <h4>Plot:</h4>
+    <p>Bagian 1: Pertemuan yang Tak Terduga</p>
+    <p>Adi dan Maya secara kebetulan bertemu di perpustakaan sekolah. Mereka berbincang-bincang dan saling bertukar informasi tentang minat dan bakat masing-masing. Adi mengungkapkan bahwa dia sangat mahir dalam membuat website, sementara Maya bercerita tentang hasratnya dalam menulis fiksi. Keduanya merasa tertarik dan ingin bekerja sama dalam sebuah proyek.</p>
+    <p>Bagian 2: Membangun Rencana</p>
+    <p>Setelah berdiskusi dan saling membagikan ide, Adi dan Maya memutuskan untuk membuat sebuah website yang berisi blog bacaan. Adi akan bertanggung jawab atas aspek teknis dan desain website, sementara Maya akan menyediakan konten berupa cerita pendek dan novel ringan. Mereka merencanakan tampilan yang interaktif dan mudah dinavigasi agar menarik minat para pembaca.</p>
+    <p>Bagian 3: Perjalanan Kolaborasi</p>
+    <p>Adi dan Maya mulai bekerja sama secara intensif. Adi membangun kerangka website dengan desain menarik dan fungsionalitas yang baik. Maya mengumpulkan karya-karyanya dan mulai mengeditnya agar sesuai dengan format digital. Mereka berdiskusi tentang tema-tema yang akan diangkat dalam blog bacaan mereka dan mencari cara untuk menarik minat pembaca potensial.</p>
+    <p>Bagian 4: Tantangan dan Rintangan</p>
+    <p>Namun, perjalanan mereka tidak berjalan mulus. Adi menghadapi beberapa kendala teknis yang memerlukan waktu dan penelitian untuk diatasi. Maya merasa tertekan dengan tenggat waktu yang ketat untuk menyelesaikan cerita-ceritanya. Selain itu, mereka juga menghadapi kesulitan dalam mempromosikan website mereka kepada khalayak yang lebih luas.</p>
+    <p>Bagian 5: Keberhasilan dan Penghargaan</p>
+    <p>Melalui kerja keras dan ketekunan, Adi dan Maya berhasil menyelesaikan website mereka. Website "Melodies of Words" diluncurkan dengan sukses dan mendapatkan perhatian dari para pembaca. Blog bacaan mereka mulai menarik minat banyak orang dan mendapat banyak pujian. Keberhasilan ini memberikan semangat baru bagi Adi dan Maya untuk terus mengembangkan website mereka dan menginspirasi lebih banyak orang untuk mencintai literasi.</p>
+    <p>Bagian 6: Pencapaian dan Penghargaan</p>
+    <p>Karena prestasi dan dedikasi mereka, Adi dan Maya mendapatkan penghargaan dari sekolah dan masyarakat. Website "Melodies of Words" menjadi terkenal di kalangan para pecinta buku dan menarik perhatian penerbit-penerbit terkemuka. Adi dan Maya merasa bangga atas apa yang mereka capai dan menginspirasi siswa-siswa lain di sekolah mereka untuk mengejar minat dan bakat mereka sendiri.</p>
+    <p>Bagian 7: Kesan yang Tertinggal</p>
+    <p>Meskipun perjalanan Adi dan Maya tidaklah mudah, mereka menemukan kebahagiaan dan kepuasan dalam bekerja sama dan mencapai tujuan mereka. Mereka meninggalkan kesan yang positif dalam komunitas literasi sekolah dan membuktikan bahwa kolaborasi antara minat dan bakat yang berbeda dapat menghasilkan hasil yang luar biasa.</p>
+    <h4>Ending 1:</h4>
+    <p>Pencapaian Karir yang Gemilang Setelah meluncurkan website "Melodies of Words," Adi dan Maya meraih kesuksesan yang gemilang. Blog bacaan mereka menjadi populer di kalangan pembaca dan menarik perhatian penerbit-penerbit terkemuka. Dengan semangat dan kerja keras, Adi dan Maya berhasil menerbitkan buku-buku elektronik karangan Maya secara resmi. Mereka menjadi penulis yang diakui dan diundang untuk berbicara dalam acara literasi yang bergengsi. Kesuksesan mereka dalam dunia literasi menginspirasi banyak orang untuk mengejar impian mereka dan memanfaatkan kekuatan teknologi dalam menyebarkan karya-karya mereka.</p>
+    <h4>Ending 2 (alternative end):</h4>
+    <p>Keterikatan Melalui Karya Seni Meskipun website "Melodies of Words" tidak mencapai tingkat popularitas yang diharapkan, Adi dan Maya tetap merasa puas dengan perjalanan mereka. Mereka menemukan kebahagiaan dalam proses menciptakan dan berkolaborasi dalam karya seni mereka. Lebih dari sekadar kesuksesan materi, Adi dan Maya membangun ikatan yang kuat melalui rasa saling mendukung dan keinginan bersama untuk mengembangkan bakat mereka. Mereka terus berbagi karya-karya mereka dengan dunia, mempengaruhi orang lain dengan pesan-pesan inspiratif dan memotivasi siswa-siswa lain di sekolah mereka untuk mengejar minat dan bakat mereka sendiri.</p>
+    <hr>
+    <footer>
+      &copy; 2023 Dean Ramadhan.
+    </footer>
+  </section>
+  </section>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.ebook-container');
+      const navLinks = document.querySelectorAll('nav a');
+
+      // Sembunyikan semua section
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Tampilkan section yang sesuai
+      const section = document.getElementById(sectionId);
+      section.classList.add('active');
+    }
+  </script>
+</body>
+</html>
